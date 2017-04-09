@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    <table border='2'>
+      <tr><th>FirstName</th>
+        <th>Last</th>
+         <th>Year</th></tr>
+
+<% for(var x of data) {%>
+    <tr>
+  <td><%= x.first %></td>
+  <td><%= x.last %></td>
+  <td><%= x.year %></td>
+  </tr>
+<%}%>
+
+    </table>
+  </body>
+</html>
